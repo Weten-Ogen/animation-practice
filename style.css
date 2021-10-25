@@ -1,0 +1,76 @@
+body{
+  background-color: black;
+}
+
+/*=====item one=======*/
+#one{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  animation-name: square;
+  position: relative;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+@keyframes square{
+  0%{
+    background-color:red;
+    top:0px;
+    left: 0px;
+  }
+  50%{
+    background-color:red;
+    border-radius: 50%;
+    }
+  100%{
+    background-color:silver;
+    top:0px;
+    left: 1280px;
+    }
+}
+
+/*-------two ------*/
+#two{
+  width: 60px;
+  height: 40px;
+  background-color:gray;
+  animation-name: rectangle;
+  position: relative;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease; 
+}
+@keyframes rectangle{
+  0%{
+    background-color: gray;
+    top: 0px;
+    left:0px;
+  }
+  25%{
+    background-color:dodgerblue;
+    top: 0px;
+    left:1280px;
+    border-radius:20%;
+  }
+  50%{
+    background-color:red;
+    top: 500px;
+    left:1280px;
+    border-radius: 50%;
+  }
+  75%{
+    background-color: gray;
+    top: 500px;
+    left:0px;
+  }
+  100%{
+    background-color: gray;
+    top: 0px;
+    left:0px;
+  }
+}
